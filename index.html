@@ -26,12 +26,13 @@
         }
 
         .portfolio-section {
-            background-image: url("./images/new.png");
-            background-repeat: no-repeat;
-            background-size: 35%;
-            background-position: 80% 90%;
-            height: 650px;
+
+            height: 550px;
             border: 3px solid white;
+            background-image: linear-gradient(to right, #ee3545, #f5457e, #ec63b1, #d582d9, #b79df2);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
 
 
         }
@@ -39,7 +40,7 @@
         .navbar {
             position: fixed;
             width: 100%;
-            background-image: linear-gradient(90deg, rgb(187, 8, 8) 0%, rgba(226, 38, 18, 1) 35%, rgba(246, 165, 136, 1) 100%);
+            background-image: linear-gradient(to right, #ee3545, #f5457e, #ec63b1, #d582d9, #b79df2);
 
         }
 
@@ -53,12 +54,13 @@
         }
 
         .navbar-brand {
-            font-size: 30px;
-            font-family: arial black;
+            /* font-size: 30px;
+            font-family: arial black; */
             /* color: orangered; */
-            font-weight: bolder;
-            -webkit-text-stroke: 1px black;
-            text-shadow: 0px 0px 20px white;
+            /* font-weight: bolder;
+            -webkit-text-stroke: 1px rgb(236, 31, 31);
+            text-shadow: 0px 0px 20px white;*/
+            margin-left: 10%;
 
         }
 
@@ -66,29 +68,80 @@
             display: flex;
             flex-direction: column;
             display: inline-block;
-            margin-top: 150px;
-            margin-left: 200px;
+            /* margin-top: 150px; */
+            margin-left: 10%;
 
 
             padding-top: 100px;
         }
 
+        .coding-image {
+            display: inline-block;
+            width: 500px;
+            margin-left: 10%;
+        }
+
         .p1 {
-            font-size: 30px;
+            font-size: 25px;
+            color: rgb(249, 223, 191);
         }
 
         .p2 {
-            font-size: 40px;
+            font-size: 45px;
             margin-bottom: 20px;
-            font-family: arial black;
-            color: orangered;
+            font-family: arial rgb(199, 53, 53);
+            color: white;
             font-weight: bolder;
-            -webkit-text-stroke: 1px black;
+
+            -webkit-text-stroke: 1px rgb(224, 8, 8);
         }
 
         .p3 {
             font-size: 25px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            color: rgb(249, 223, 191);
+
+        }
+
+        .typewriter {
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .1em;
+            /* Adjust as needed */
+            animation:
+                typing 2s steps(20, end),
+                blink-caret 1s step-end infinite;
+
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: rgb(249, 247, 242);
+            }
         }
 
         #resume-button a {
@@ -101,29 +154,32 @@
         }
 
         #resume-button a:hover {
-            color: white;
+            color: rgba(100, 13, 131, 0.804);
         }
 
         #resume-button {
             padding: 10px;
             border-radius: 10px;
-            background-color: rgba(232, 52, 12, 0.431);
+            border: 2px solid white;
+            background-color: rgba(100, 13, 131, 0.804);
+            margin-top: 20px;
         }
 
         #resume-button:hover {
-            background-color: rgb(229, 67, 67);
-            border: 2px solid rgb(215, 50, 50);
-            transform: scale(1.2);
-            /* transition-duration: 1000; */
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgba(100, 13, 131, 0.804);
+
+            transform: scale(1.1);
+            transition-duration: 1000ms;
         }
     </style>
 
 </head>
 
 <body>
-
+    <!-- this is navigation bar -->
     <nav class="navbar navbar-dark  navbar-expand-lg navbar-light  ">
-        <a class="navbar-brand " href="#">Aditya</a>
+        <a class="navbar-brand " href="#"><img src="./images/logo.png" alt="loading..." width="40%"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -148,11 +204,14 @@
             </ul>
         </div>
     </nav>
+
+    <!-- this is section 1 -->
     <section id="Home" class="portfolio-section ">
         <div class="portfoloi-box">
             <div class="p1">Hi,my name is </div>
-            <div class="p2" data-aos="zoom-out">Aditya Kanase</div>
-            <div class="p3">I am <span class="p2">Frontend developer</span></div>
+            <div class="p2">Aditya Kanase</div>
+            <div class="p3 typewriter">I am <span class="p2 ">Frontend developer</span>
+            </div>
 
             <div>
 
@@ -160,10 +219,12 @@
                         href="https://drive.google.com/file/d/1R9OE268bYQHvtqdnTgO1ccm-tL0IkRhb/view?usp=sharing">Resume</a></button>
             </div>
         </div>
+        <div class="coding-image">
+            <img src="./images/new.png" alt="loading..." width="400px">
+        </div>
 
-    </section>
-    <!-- <section id="experience" class="portfolio-section">
-
+        <!-- </section>
+     <section id="experience" class="portfolio-section">
 
 
         <div class="card text-center">
@@ -179,10 +240,10 @@
             <div class="card-footer text-body-secondary">
                 2 days ago
             </div>
-        </div> -->
+        </div> 
 
-    </section>
-    <!-- <section id="projects" class="portfolio-section">
+    </section> -->
+        <!-- <section id="projects" class="portfolio-section">
         <h1 class="headings"> Project section</h1>
     </section>
     <section id="about" class="portfolio-section">
@@ -191,12 +252,12 @@
     <section id="contact" class="portfolio-section">
         <h1 class="headings">contact section</h1>
     </section> -->
-    <button>click me</button>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
+    </script> -->
 
 </body>
 
