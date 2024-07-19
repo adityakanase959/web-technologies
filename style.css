@@ -1,0 +1,36 @@
+.portfolio-section {
+    background-color: #A6B1E1;
+    height: 650px;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-weight: bold;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #424874;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navi {
+    margin: auto;
+    font-size: large;
+}
+
+.navbar-brand {
+    font-size: x-large;
+}
+
+.headings {
+    margin-bottom: 2%;
+    font-weight: bolder;
+    color: #F4EEFF;
+}
