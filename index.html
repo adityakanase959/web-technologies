@@ -14,6 +14,10 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
 
@@ -31,13 +35,13 @@
                     <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#contact">Contact</a>
@@ -67,12 +71,47 @@
     </section>
 
     <!-- section 2 -->
-    <section id="experience" class="portfolio-section-2">
+    <section id="about" class="portfolio-section-2">
+        <div class="parent-div">
+            <div class="child_1">
+                <div class="my-image">
+                    <img class="scale-up-center" src="./images/aditya-removebg-preview.png" width="300px"
+                        alt="loading...">
+
+                </div>
+            </div>
+
+            <div class="child_2">
+                <!-- <h1 align="center wrapper">About</h1> -->
+                <div class="wrapper">
+                    <svg>
+                        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                            About
+                        </text>
+                    </svg>
+                </div>
+                <p>Hello! I'm Aditya, a passionate Frontend web developer with a keen eye for design and a love for
+                    creating unique, responsive websites. With 1 year of experience in the industry, I have honed my
+                    skills in front-end development to craft user-friendly interfaces that not only look great but also
+                    perform seamlessly.</p>
+                <p>
+                    My journey into web development started with a fascination for how websites work and has evolved
+                    into a career where I bring ideas to life through code. I thrive on challenges and enjoy turning
+                    complex problems into simple, intuitive solutions. Whether it's optimizing the user experience or
+                    implementing new features, I am dedicated to delivering high-quality work that exceeds expectations.
+                </p>
+            </div>
+        </div>
 
 
     </section>
 
     <!-- section 3 -->
+    <section id="skills" class="skills-section">
+        <h1 class="headings">skills</h1>
+    </section>
+
+    <!-- section 4 -->
     <section id="projects" class="portfolio-section-3">
         <p>My Projects</p>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -117,10 +156,8 @@
         </div>
     </section>
 
+
     <!--
-    <section id="about" class="portfolio-section">
-        <h1 class="headings">About section</h1>
-    </section>
     <section id="contact" class="portfolio-section">
         <h1 class="headings">contact section</h1>
     </section> -->
