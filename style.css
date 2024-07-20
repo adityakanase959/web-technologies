@@ -1,19 +1,59 @@
-.portfolio-section {
-    background-color: #A6B1E1;
-    height: 650px;
-    border: 3px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    font-weight: bold;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: sans-serif;
 }
 
+.portfolio-section {
+
+    height: 550px;
+
+    background-image: linear-gradient(to right, #ee3545, #f5457e, #ec63b1, #d582d9, #b79df2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.portfolio-section-2 {
+
+    height: 550px;
+
+    background-color: rgb(247, 228, 242);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+.portfolio-section-3{
+    background-color: rgb(247, 228, 242);
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-section-3 p {
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 254, 254);
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 10px#160517;
+}
+
+.carousel{
+    width: 75%;
+}
 .navbar {
     position: fixed;
     width: 100%;
-    background-color: #424874;
+    z-index: 10;
+    /* background-image: linear-gradient(to right, #ee3545, #f5457e, #ec63b1, #d582d9, #b79df2); */
+
 }
 
 html {
@@ -26,11 +66,123 @@ html {
 }
 
 .navbar-brand {
-    font-size: x-large;
+    /* font-size: 30px;
+    font-family: arial black; */
+    /* color: orangered; */
+    /* font-weight: bolder;
+    -webkit-text-stroke: 1px rgb(236, 31, 31);
+    text-shadow: 0px 0px 20px white;*/
+    margin-left: 10%;
+
 }
 
-.headings {
-    margin-bottom: 2%;
-    font-weight: bolder;
-    color: #F4EEFF;
+.portfoloi-box {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    /* margin-top: 150px; */
+    margin-left: 10%;
+
+
+    padding-top: 100px;
 }
+
+.coding-image {
+    display: inline-block;
+    width: 500px;
+    margin-left: 10%;
+}
+
+.p1 {
+    font-size: 25px;
+    color: rgb(249, 223, 191);
+}
+
+.p2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: arial rgb(199, 53, 53);
+    color: white;
+    font-weight: bolder;
+
+    -webkit-text-stroke: 1px rgb(224, 8, 8);
+}
+
+.p3 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: rgb(249, 223, 191);
+
+}
+
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em;
+    /* Adjust as needed */
+    animation:
+        typing 2s steps(20, end),
+        blink-caret 1s step-end infinite;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(249, 247, 242);
+    }
+}
+
+#resume-button a {
+    color: white;
+
+
+    text-decoration: none;
+
+    /* margin-left: 70px; */
+}
+
+#resume-button a:hover {
+    color: rgba(100, 13, 131, 0.804);
+}
+
+#resume-button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgba(100, 13, 131, 0.804);
+    margin-top: 20px;
+}
+
+#resume-button:hover {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(100, 13, 131, 0.804);
+
+    transform: scale(1.1);
+    transition-duration: 1000ms;
+}
+
+
